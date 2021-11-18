@@ -1,0 +1,16 @@
+clientConfig.PLUGINS_CONFIG['iren-way'] = {
+    pluginLayers: [],
+    pluginDOMElements: [],
+    pluginComponents: ['gisclient-maps_iren-way:iren-way_Controls:3:mtools','gisclient-maps_iren-way:iren-way_Functions:3:mtools'],
+    pluginClientConfig: {
+        IRENWAY_LAYERS: [
+
+        ],
+        IRENWAY_CONCATSTRING: '',
+        IRENWAY_OUTDATA: {
+            
+        },
+        IRENWAY_DEFAULT_ZOOM: 1000,
+        IRENWAY_SRID: 'EPSG:4326',
+    }
+}
