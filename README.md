@@ -1,2 +1,2 @@
-# gisclient-maps_iren_way
+# gisclient-maps_iren-way
 GEOweb plugin for IREN-WAY integration
