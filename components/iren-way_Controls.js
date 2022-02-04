@@ -283,7 +283,7 @@ window.GCComponents["Controls"].addControl('control-iren-way-markpoint', functio
 window.GCComponents["SideToolbar.Buttons"].addButton (
     'button-iren-way-markpoint',
     'Esporta coordinate per IRENWAY',
-    'glyphicon-white glyphicon-tag',
+    'icon-iren-way',
     function() {
         if (sidebarPanel.handleEvent || typeof(sidebarPanel.handleEvent) === 'undefined')
         {
