@@ -49,7 +49,7 @@ window.GCComponents.Functions.postMessageHandlerIrenWay = function (event) {
 // **** PostMessage
 window.addEventListener('message', window.GCComponents.Functions.postMessageHandlerIrenWay, false);
 
-window.GCComponents.Functions.sendToIrenWay = function(irenwayItems) {
+window.GCComponents.Functions.sendToIrenWay = function(irenwayItems,send) {
     if (irenwayItems.x && irenwayItems.y && irenwayItems.srid) {
         if (irenwayItems.srid !== clientConfig.IRENWAY_SRID)
             return;
@@ -62,11 +62,13 @@ window.GCComponents.Functions.sendToIrenWay = function(irenwayItems) {
             OSFCDataIrenWay[field] = fieldVal;
         }
     }
-    parent.postMessage(OSFCDataIrenWay,'*');
+    if (send === true) {
+        parent.postMessage(OSFCDataIrenWay,'*');
+    }
 }
 
 window.GCComponents.Functions.resetIrenWayData = function(){
     OSFCDataIrenWay = {
-        action: 'writeOnOFSC'
+        action: 'writeOnOFSC-IW'
     };
 }

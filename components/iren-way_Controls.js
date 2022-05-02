@@ -233,7 +233,7 @@ window.GCComponents["Controls"].addControl('control-iren-way-autoselect', functi
                             }
                             exportToIrenWay[key] = arrOutData.join(clientConfig.IRENWAY_CONCATSTRING);
                         });
-                        window.GCComponents.Functions.sendToIrenWay(exportToIrenWay);
+                        window.GCComponents.Functions.sendToIrenWay(exportToIrenWay,true);
                         event.layer.irenwayExportData = {};
                     }
                     if (this.resultLayer.hasOwnProperty('renderQueue')) {
